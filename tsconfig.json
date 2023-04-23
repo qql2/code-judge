@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "target": "es2016",
+        "lib": [
+            "ESNext",
+            "ES2022",
+            "ES6",
+            "dom"
+        ],
+        "module": "commonjs",
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        "outFile": "./index.js",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "skipLibCheck": true
+    },
+    "include": [
+        "src/index.ts"
+    ]
+}
