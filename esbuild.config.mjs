@@ -4,13 +4,14 @@ import process from "process";
 const prod = (process.argv[2] === "production");
 
 const context = await esbuild.context({
-    entryPoints: ['src/index.ts'],
+    entryPoints: ['src/code-block-judge.ts'],
     outfile: 'index.js',
     external: [],
     bundle: true,
     sourcemap: prod ? false : "inline",
     minify: prod ? true : false,
     treeShaking: true,
+    format: "cjs",
     platform: 'browser',
     logLevel: 'info',
 });
